@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="edit.css" >  
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  </head>
+  <body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="logo-no-background.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Resume</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+              </ul>
+              <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Cloud Engineer</p>
+            <h1>Hi! I'm <span>Yokesh</span> <br> from Chennai</h1>
+        </div>
+    </div>
+</div>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="about.jpg" >
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About me</h1>
+                <p>I'm a Cloud Computing Engineer with a background in automation, monitoring, and infrastructure provisioning. I have completed CompTIA Networking N+, Redhat Linux (RHCE, RHCSA), and AWS Solution Architect courses.</p><br>
+                <p>I am proficient in creating containers, monitoring EC2 instances, and setting AWS IAM users, roles, and policies for maximum security. I have hands-on experience with the AWS network. In addition, I have set up VPC Peering connections, coordinated load balancing using Route 53, and integrated AWS services like S3 for easy file processing. Using technologies like Draw.io, I am excellent at drawing and explaining complex infrastructure designs, promoting understanding and agreement across project teams.</p><br>
+                <p>With a Bachelor's degree in Computer Application and a strong GPA, I am committed to continuous learning and professional growth. I am seeking opportunities to leverage my skills and contribute to the success of DevOps, SRE, and cloud engineering projects.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>AWS</span><br></li>
+                        <li><span>Linux</span><br>(Redhat, Cent OS, Ubuntu)</li>
+                        <li><span>Teraform</span><br></li>
+                        <li><span>Ansible, Jenkins, Docker </span><br></li>
+                        <li><span>ServiceNow, Datalog, ADMP</span><br></li>
+                        <li><span>Git</span><br></li>
+                        <li><span>Kubernetes</span><br></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li class="list-item"><span>Jul 2023- Present<br>Senior System Engineer-CloudOps at iOPEX Technologies</span>
+                           
+                                <p class="description">Successfully managed and troubleshoot AWS services, including EC2, S3, IAM, Load Balancer, Auto-scaling, VPC, Route53, and ELB, ensuring 99.9% uptime.</p>
+                                <p class="description">Implemented and maintained CI/CD pipelines using Jenkins and CodePipeline, resulting in a 30% reduction in deployment time.</p>
+                                <p class="description">Created and provisioned AWS S3 buckets, managing over 100TB of data storage and providing shared access to 50+ users, improving collaboration and data accessibility.</p>
+                                <p class="description">Provisioned user AD accounts for cloud users to access client domain Linux servers using Jenkins & ADM tool, facilitating seamless access for 100+ users.</p>
+                                <p class="description">Orchestrated multi-service deployments in the AWS linux server environment using Ansible, reducing deployment errors by 25%.</p>
+                                <p class="description">Conducted application and OS upgrades/patches using Jenkins, Ansible, and Linux servers, enhancing system security and performance.</p>
+                                <p class="description">Utilized Ansible for configuring necessary tools in Linux systems, streamlining configuration management processes and reducing setup time by 20%.</p>
+                                <p class="description">Leveraged an array of tools including Linux, Git, Jenkins, Ansible, Docker, AWS, ServiceNow, Datadog, Jira, Atlassian, Confluence, Slack, PagerDuty for process optimization & development.</p>
+                            
+                        </li> <br>
+                        <li class="list-item"><span>Mar 2022- Aug 2023<br>System Engineer- Techops at iOPEX Technologies</span>
+                            
+                                <p class="description">Managed technical contributions to the DevOps team.</p>
+                                <p class="description">Provisioned/installed/configured/maintained thousands of PROD/Dev servers across our global data centers. Managed Ad-serving RTB clusters.</p>
+                                <p class="description">Maintained high availability, monitored 18,000+ hosts (servers), and performed troubleshooting across multiple global data centers.</p>
+                                <p class="description">Proven track record in provisioning, automation, and incident resolution, contributed to complex financial systems stability.</p>
+                                <p class="description">Uses Grafana for the graphical representation of the output value of the services. Utilized an array of tools including Linux, Git, Jenkins, Ansible, Jira, Grafana, Logic Monitor, to facilitate collaborative development, and ensure efficient monitoring and incident resolution.</p>
+                                <p class="description">Providing user account access through PagerDuty.</p>
+                             
+                        </li> <br>
+                        <li class="list-item"><span>Sep 2021- Mar 2022<br>Trainee- System Engineer</span>
+                            
+                                <p class="description">Led Production Incident management, Problem management, Change management, Monitoring deployment, and development, Salesforce support, and Active Directory management.</p>
+                                <p class="description">Monitored the customer's infrastructure using the tools and analyzed the priority and severity based on ITIL methodology.</p>
+                                <p class="description">Collaborated on global outages, reporting outage status through the Atlassian Cloud Status Page.</p>
+                                <p class="description">Managed Active Directory, creating user accounts, granting access, and serving as the Single Point of Contact.</p>
+                                <p class="description">Cleared triggered alerts by restarting services and installing Datadog agents by following the runbook (CloudKB).</p>
+                                <p class="description">Utilized ticketing tools, monitoring tools, and messaging systems.</p>
+                                <p class="description">Collaborated with the internal MIS team on productivity data, presented at monthly Zoom meetings, and oversaw a shift team of five people.</p>
+                                <p class="description">Resolved technical incidents, addressed multi-P1 difficulties, and took part in the Zoom bridge discussions.</p>
+                                <p class="description">Followed SOP documents and escalated within the defined SLA.</p>
+                            
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2021</span><br>BCA from DBBCCC Hindu College</li>
+                        <li><span>2018</span><br>HSC, Computer Science from Velammal Global School</li>
+                        <li><span>2016</span><br>SSLC from Velammal Matric Hr Sec School</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!----------------------portfolio---------------> 
+<div id="projects">
+<div class="container">
+    <h1 class="sub-title">My Projects</h1>
+    <div class="work-list">
+        <div class="work">
+            <img src="proj1.jpg">
+            <div class="layer">
+                <h3>#1</h3>
+                <p>Building a Resilient Three-Tier Architecture on AWS</p>
+            </div>
+        </div>
+        <div class="work">
+            <img src="proj2.jpg">
+            <div class="layer">
+                <h3>#2</h3>
+                <p>AWS- Deploying Application in Private and public subnet in production with VPC </p>
+            </div>
+        </div>
+        <div class="work">
+            <img src="proj3.jpg">
+            <div class="layer">
+                <h3>#3</h3>
+                <p>Deploying a game application into Amazon EKS</p>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="btn">See more</a>
+
+</div>
+
+</div>
+
+
+
+<!--contact-->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact me</h1>
+                <p><i class="fa-solid fa-envelope"></i>  yyogi@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>  6383564932</p>
+                <div class="social-icons">
+                    <a href="https://instagram.com/theyokeshh/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/yokesh-s-379575181?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app "><i class="fa-brands fa-linkedin"></i></a>
+                   
+                </div>
+                <a href="newresume.pdf" class="btn btn2">Download CV</a>
+            </div>
+            
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your name" required>
+                    <input type="email" name="Email" placeholder=" Your mail" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="id"></span>
+            </div>
+           
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Akshaya. Made with <i class="fa-regular fa-heart"></i></p>
+    </div>
+</div>
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+    
+</script>
+
+ <script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+ </script>
+ <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbx9ejKvyIDG5BCxTFcSdOTxCrxKRx1_HFoWkuVzqYYiE-oTOtZtsAGxteBAJIth_sLJiw/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML= "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+  </body>
+  </html>
